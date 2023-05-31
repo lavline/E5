@@ -156,6 +156,7 @@ def teamWrite(a,channelname):
          "description": "This channel is where we debate all future architecture plans",
          "membershipType": "standard"
          }
+    print(jsontxt)
     print(objectlist)
     url=r'https://graph.microsoft.com/v1.0/teams/'+objectlist[0]['id']+r'/channels'
     jsontxt = json.loads(apiReq('post',a,url,json.dumps(data)))

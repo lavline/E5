@@ -184,7 +184,8 @@ for a in range(1, int(app_num)+1):
 print('')    
 #获取天气
 headers={'Accept-Language': 'zh-CN'}
-weather=req.get(r'http://wttr.in/'+city+r'?format=4&?m',headers=headers).text
+#weather=req.get(r'http://wttr.in/'+city+r'?format=4&?m',headers=headers).text
+weather=req.get('http://www.weather.com.cn/weather1d/101010100.shtml#search').text
 
 #实际运行
 for a in range(1, int(app_num)+1):

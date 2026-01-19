@@ -13,6 +13,4 @@
  * MS_TOKEN为refresh_token，使用rclone获取
  * GH_TOKEN为GitHub key
  * 登陆portal.zaure.com，管理 Microsoft Entra ID -> 应用注册
-'''
-rclone authorize "onedrive" "client_id" "client_secret"
-'''
+ * rclone authorize "onedrive" "client_id" "client_secret"
